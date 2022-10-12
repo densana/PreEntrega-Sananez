@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import cakeApi from './APICake/cakeApi'
+import CardCake from './components/Card'
+import './App.css'
+import NavBar from './components/NavBar';
+import Ilc from './components/ItemListContainer';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  <div className="principal_container">
+    <NavBar/>
+    <Ilc/>
+    <div className="cards_container">
+    {cakeApi.map((character, i) => (
+      <CardCake key={i}
+      name= {character.character}
+      quote= {character.quote}
+      image= {character.image}
+      />))}
+       <Ilc/>
     </div>
+
+  </div>
   );
 }
 
