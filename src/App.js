@@ -7,7 +7,7 @@ function App() {
   return (
   <div className="principal_container">
     <NavBar/>
-    <Ilc/>
+    <Ilc msg="Pastelería de Autor"/>
   </div>
   );
 }
