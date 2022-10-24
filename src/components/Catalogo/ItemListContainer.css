@@ -1,0 +1,27 @@
+/*.Ilc {
+    background-color: #fff5ee;
+    font-family: 'Bellota Text';
+    color:blue;
+}
+
+.greeting {
+    font-family: 'Bellota Text';
+    font-size: 30px;
+    text-align: center;
+    color: rgb(237, 34, 220);
+}*/
+
+.buscador{
+    color: #ffbb79;
+    font-size: medium;
+    text-align: center;
+    border:none;
+}
+
+.cards-container{
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: none;
+}

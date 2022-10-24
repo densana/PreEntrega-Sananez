@@ -1,0 +1,23 @@
+.navbar {
+    background-color: #fff5ee;
+}
+
+.brand {
+    background-color: transparent;
+    width: 100px;
+}
+
+.nav-link {
+    list-style: none;
+    text-decoration: none;
+}
+
+.itemstyle {
+    list-style: none;
+    text-decoration: none;
+    color: #ffbb79;
+}
+
+#basic-nav-dropdown {
+    color:#ffbb79;
+}

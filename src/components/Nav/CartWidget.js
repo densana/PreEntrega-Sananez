@@ -4,7 +4,7 @@ import { BsCart2 } from 'react-icons/bs';
 function BotonCarrito() {
   return (
     <>
-      <Button variant="outline-info"><BsCart2/></Button>{' '}
+      <Button variant="outline-warning"><BsCart2/></Button>{' '}
     </>
   );
 }
