@@ -32,10 +32,10 @@ import Card from 'react-bootstrap/Card';
 
 const ItemList = (props) => {
   return (
-      <Card className="card-container">
+      <Card className="cardcontainer">
       <Link to={`Detalle/${props.id}`}>
       <Card.Img variant="top" alt={`deli ${props.title}`} src={props.pictureurl} />
-      <Card.Body className="description-container" >
+      <Card.Body className="descriptioncontainer" >
         <Card.Title className="titulo">{props.title}</Card.Title>
         <Card.Text style={{color: "#3a3636"}}>
           {`# ${props.id}`}
@@ -44,8 +44,8 @@ const ItemList = (props) => {
           <Card.Text style={{color: "#3a3636"}}>{props.category}</Card.Text>
       </Card.Body>
       </Link>
-      <ButtonCount className="buttoncount" stock={props.stock} initial={0}/>
-      <Button variant="primary">Quiero!</Button>
+      <ButtonCount variant="outline-warning" stock={props.stock} initial={0}/>
+      <Button variant="outline-warning" >Quiero!</Button>
     </Card>
   );
 };

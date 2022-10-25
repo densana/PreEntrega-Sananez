@@ -1,18 +1,19 @@
-.card-container {
+.cardcontainer {
     width: 250px;
     margin: 20px;
     padding:10px;
     border-radius: 12px;
-    list-style: none;
-    text-decoration: none;
     border:none;
-    background-color: #eed7d5;
+    background-color: transparent;
   }
 
   .titulo {
     color: #f98f6e;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
+
+
+
   
 
 

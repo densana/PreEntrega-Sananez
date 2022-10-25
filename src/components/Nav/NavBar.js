@@ -27,7 +27,7 @@ function NavBar() {
               <Link className="itemstyle" to={`/category/muffins`}>Muffins</Link>
               </NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">
-              <Link className="itemstyle" to={`/category/muffins`}>Alfajores</Link>
+              <Link className="itemstyle" to={`/category/alfajores`}>Alfajores</Link>
               </NavDropdown.Item>
             </NavDropdown>
             <BotonCarrito/>

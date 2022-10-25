@@ -3,24 +3,29 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import * as React from 'react';
 import {useState} from 'react';
 
-function ButtonCount({stock, initial}) {
-    const [numberCount, setNumberCount] = useState(initial);
+function ButtonCount() {
+    const [numberCount, setNumberCount] = useState(0);
 
   function clickCountAdd() {
-    (stock) !== numberCount ? setNumberCount(numberCount + 1) : setNumberCount(numberCount + 0);
+    setNumberCount(numberCount + 1) 
+
   }
 
   function clickCount() {
-    numberCount !== 0 ? setNumberCount(numberCount - 1) : setNumberCount(numberCount + 0)
+    setNumberCount(numberCount - 1)
   }
+
+  const stock = (10 - numberCount)
+
+
 
   return (
     <div>
-      <p>Stock:{stock}</p>
+      <p>Stock: {stock}</p>
     <ButtonGroup aria-label="Basic example">
-      <Button variant="secondary" onClick={() => clickCount()}>-</Button>
-      <Button variant="secondary">{numberCount}</Button>
-      <Button variant="secondary" onClick={() => clickCountAdd()}>+</Button>
+      <Button variant="light" disabled={numberCount === 0 ? true : false} onClick={() => clickCount() }>-</Button>
+      <Button variant="light">{numberCount}</Button>
+      <Button variant="light" disabled={numberCount === 10 ? true : false} onClick={() => clickCountAdd() }>+</Button>
     </ButtonGroup>
     </div>
   );
